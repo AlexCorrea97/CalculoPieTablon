@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editancho"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#A1D8A98F"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#A6FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/editespesor"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editlargo"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#A1D8A98F"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#A6FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/editespesor"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/precio5"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ancho"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editancho"
+        app:layout_constraintEnd_toEndOf="@+id/editancho"
+        app:layout_constraintStart_toStartOf="@+id/editancho"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/precio4"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Largo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editlargo"
+        app:layout_constraintEnd_toEndOf="@+id/editlargo"
+        app:layout_constraintStart_toStartOf="@+id/editlargo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/precio3"
+        android:layout_width="194dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:text="Ingrese sus medidas"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/precio2"
+        app:layout_constraintStart_toStartOf="@+id/precio5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/unidad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inch"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toEndOf="@+id/editancho"
+        app:layout_constraintTop_toTopOf="@+id/editancho"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/unidad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="inch"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toEndOf="@+id/editespesor"
+        app:layout_constraintTop_toTopOf="@+id/editespesor"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/unidad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="ft"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editlargo"
+        app:layout_constraintTop_toTopOf="@+id/editlargo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editespesor"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="#A1D8A98F"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#A6FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/precio2"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="Espesor"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editespesor"
+        app:layout_constraintEnd_toEndOf="@+id/editespesor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editespesor"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start"
+        android:background="@drawable/logo_acypuc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cálculo de Pie Tablón"
+        android:textColor="#AA000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:background="@drawable/logo_tabla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_uno"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/precio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Seleccione sus unidades"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="108dp">
+
+            <RadioButton
+                android:id="@+id/rbnPPP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulgada x Pulgada x Pie"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbnPPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulgada x Pulgada x Metro"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbnMMM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Metro x Metro x Metro"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="193dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="12dp"
+        android:text="Precio de la Pieza $"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/precio3"
+        app:layout_constraintStart_toStartOf="@+id/precio3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editprecio"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="#A1D8A98F"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#A6FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/precio3"
+        app:layout_constraintStart_toEndOf="@+id/precio"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_uno"
+        android:text="CALCULAR"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/style_uno"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Resultado"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Son tantos Pie(s) Tablón"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="El precio por Pie Tablón es de $tanto"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editespesor3"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:background="#A1D8A98F"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#A6FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="186dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="77dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
